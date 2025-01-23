@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <!-- Unicode META -->
+    <meta charset="UTF-8" />
+    <!-- Responsive META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre -->
+    <title>MAROKA | Contact</title>
+    <!-- Style LINK -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- Font Awesome LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap LINK -->
+    <link rel="stylesheet" href="../style/bootstrap.css" />
+    <!-- Google Fonts LINK -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    body {
+      background-image: url("../assets/bg1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      margin: 0;
+    }
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+    .main {
+      color: #ffe0b2;
+    }
+    .btn {
+      font-weight: 600;
+      background-color: #ffe0b2;
+      color: #4e342e;
+    }
+    .btn:hover {
+      background-color: #ffe0b2eb;
+      color: #4e342e;
+    }
+    #title {
+      font-weight: 600;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../accueil.html">
+            <h6 class="logo">MAROKA</h6>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a aria-current="page" class="nav-link" href="../accueil.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinations.html">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="culture.html">Culture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="container py-5 mt-5">
+        <br />
+        <h1 id="title" class="mb-4 text-center">Contactez-nous</h1>
+        <br />
+        <form>
+          <!-- Nom complet -->
+          <div class="mb-3">
+            <label for="nomComplet" class="form-label">Nom complet</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nomComplet"
+              placeholder="Entrez votre nom complet"
+              required
+            />
+          </div>
+
+          <!-- Âge -->
+          <div class="mb-3">
+            <label for="age" class="form-label">Âge</label>
+            <input
+              type="number"
+              class="form-control"
+              id="age"
+              placeholder="Entrez votre âge"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Entrez votre email"
+              required
+            />
+          </div>
+
+          <!-- Nationalité -->
+          <div class="mb-3">
+            <label for="nationalite" class="form-label">Nationalité</label>
+            <select class="form-select" id="nationalite" required>
+              <option value="" disabled selected>
+                Choisissez votre nationalité
+              </option>
+              <option value="Marocain">Marocain</option>
+              <option value="Français">Français</option>
+              <option value="Espagnol">Espagnol</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="Entrez votre message"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Bouton de soumission -->
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+/*
+Brand: MAROKA
+
+Couleurs:
+    Couleur principale #ffe0b2
+    Couleur secondaire #4e342e
+
+Police: Poppins
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+i {
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  margin: auto;
+  color: #4e342e;
+}
+
+.header {
+  background-color: #ffe0b2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header ul li a {
+  font-weight: 600;
+  color: #4e342e;
+}
+
+.carousel-background {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  padding: 8px 20px;
+  transform: translate(0, 30px);
+  border: none;
+  outline: none;
+  background-color: #ffe0b2;
+  color: #4e342e;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover {
+  background-color: #ffe0b2eb;
+  transition: all 0.2s ease-out;
+}
+
+#hero-title {
+  color: #ffe0b2;
+  font-size: 60px;
+  text-align: left center;
+  line-height: 40px;
+}
+
+.m-ici {
+  font-size: 30px;
+}
+
+#btn-carousel-1 {
+  transform: scale(1.5);
+}
+#btn-carousel-2 {
+  transform: scale(1.5);
+}
+
+#title {
+  font-size: 40px;
+  color: #ffe0b2;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  #hero-title {
+    font-size: 25px;
+  }
+  .m-ici {
+    font-size: 20px;
+  }
+  #hero-title {
+    line-height: 30px;
+  }
+  .button {
+    font-size: 0.8rem;
+  }
+  #btn-carousel-1 {
+    transform: scale(0.5);
+  }
+  #btn-carousel-2 {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  #hero-title {
+    font-size: 35px;
+  }
+  .m-ici {
+    font-size: 20px;
+  }
+  #hero-title {
+    line-height: 30px;
+  }
+  .button {
+    font-size: 1rem;
+  }
+  #btn-carousel-1 {
+    transform: scale(1);
+  }
+  #btn-carousel-2 {
+    transform: scale(1);
+  }
+}

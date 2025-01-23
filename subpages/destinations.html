@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <!-- Unicode META -->
+    <meta charset="UTF-8" />
+    <!-- Responsive META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre -->
+    <title>MAROKA | Destinations</title>
+    <!-- Style LINK -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- Font Awesome LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap LINK -->
+    <link rel="stylesheet" href="../style/bootstrap.css" />
+    <!-- Google Fonts LINK -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        background-image: url("../assets/bg1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        margin: 0;
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      .card {
+        border: 4px solid #ffe0b2;
+        border-radius: 10px;
+        text-align: justify;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s;
+      }
+      .card-title {
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: #4e342e;
+      }
+      .card-text {
+        font-size: 1rem;
+        color: #4e342e;
+      }
+      .btn {
+        font-weight: 600;
+        background-color: #ffe0b2;
+        color: #4e342e;
+      }
+      .card-img-top {
+        aspect-ratio: 16 / 9;
+        border-radius: 8px;
+      }
+      .card:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transform: translate(0, -5px);
+        transition: all 0.3s;
+      }
+      .btn:hover {
+        background-color: #ffe0b2eb;
+        color: #4e342e;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../accueil.html">
+            <h6 class="logo">MAROKA</h6>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a aria-current="page" class="nav-link" href="../accueil.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinations.html">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="culture.html">Culture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="container py-5">
+        <div class="row g-4 g-lg-5 mt-1">
+          <br />
+          <h1 id="title" class="mb-4 text-center">Vos Prochaines Aventures</h1>
+          <br />
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/casablanca.jpg"
+                class="card-img-top"
+                alt="Casablanca"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Casablanca</h5>
+                <p class="card-text">
+                  Une métropole moderne et la plus grande ville du Maroc,
+                  célèbre pour son architecture contemporaine et la Mosquée
+                  Hassan II.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Casablanca"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/marakech.jpg"
+                class="card-img-top"
+                alt="Marrakech"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marrakech</h5>
+                <p class="card-text">
+                  Connue pour sa médina historique, ses souks colorés, et la
+                  place Jemaa el-Fnaa, c’est une destination mêlant tradition et
+                  luxe.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Marrakech"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/rabat.jpg" class="card-img-top" alt="Rabat" />
+              <div class="card-body">
+                <h5 class="card-title">Rabat</h5>
+                <p class="card-text">
+                  Une ville côtière alliant modernité et charme historique,
+                  abritant le Palais Royal, la Tour Hassan et des jardins
+                  paisibles.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Rabat"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/fes.png" class="card-img-top" alt="Fès" />
+              <div class="card-body">
+                <h5 class="card-title">Fès</h5>
+                <p class="card-text">
+                  Réputée pour sa médina millénaire, ses tanneries et
+                  l’Université Al Quaraouiyine, la plus ancienne au monde.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Fès"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/tanger.jpg"
+                class="card-img-top"
+                alt="Tanger"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tanger</h5>
+                <p class="card-text">
+                  Ville portuaire sur le détroit de Gibraltar, Tanger est un
+                  mélange unique d’influences européennes et marocaines.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Tanger"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/agadir.jpg"
+                class="card-img-top"
+                alt="Agadir"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Agadir</h5>
+                <p class="card-text">
+                  Station balnéaire avec les plages, un climat agréable et une
+                  promenade animée, idéale pour se détendre.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Agadir"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/chefchaouen.jpg"
+                class="card-img-top"
+                alt="Chefchaouen"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chefchaouen</h5>
+                <p class="card-text">
+                  Située dans les montagnes du Rif, elle pittoresque est célèbre
+                  pour ses ruelles peintes en bleu et son ambiance apaisante.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Chefchaouen"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/meknas.jpg"
+                class="card-img-top"
+                alt="Meknès"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Meknès</h5>
+                <p class="card-text">
+                  Ville historique avec de grandes portes, des jardins
+                  verdoyants et les ruines romaines de Volubilis.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Meknès"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/ouarzazat.jpg"
+                class="card-img-top"
+                alt="Ouarzazate"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ouarzazate</h5>
+                <p class="card-text">
+                  Réputée pour ses studios de cinéma et sa proximité avec le
+                  Sahara, elle offre des paysages à couper le souffle.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Ouarzazate"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 10 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/essaouira.jpg"
+                class="card-img-top"
+                alt="Essaouira"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Essaouira</h5>
+                <p class="card-text">
+                  Charmante ville côtière avec une riche histoire, une scène
+                  artistique dynamique et des conditions idéales pour le
+                  kitesurf.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Essaouira"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 11 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/tetouan.jpg"
+                class="card-img-top"
+                alt="Tétouan"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tétouan</h5>
+                <p class="card-text">
+                  Classée au patrimoine mondial de l’UNESCO, Tétouan possède une
+                  médina magnifiquement préservée et une forte influence
+                  andalouse.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Tétouan"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 12 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="../assets/ifrane.jpg"
+                class="card-img-top"
+                alt="Ifrane"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ifrane</h5>
+                <p class="card-text">
+                  Une ville de montagne paisible avec une architecture de style
+                  alpin, des parcs verdoyants et une station de ski prisée en
+                  hiver.
+                </p>
+                <a
+                  href="https://www.google.com/maps?q=Ifrane"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

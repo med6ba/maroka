@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <!-- Unicode META -->
+    <meta charset="UTF-8" />
+    <!-- Responsive META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre -->
+    <title>MAROKA | Culture</title>
+    <!-- Style LINK -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- Font Awesome LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap LINK -->
+    <link rel="stylesheet" href="../style/bootstrap.css" />
+    <!-- Google Fonts LINK -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        background-image: url("../assets/bg1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        margin: 0;
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      .card {
+        border: 4px solid #ffe0b2;
+        border-radius: 10px;
+        text-align: justify;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s;
+      }
+      .card-title {
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: #4e342e;
+      }
+      .card-text {
+        font-size: 1rem;
+        color: #4e342e;
+      }
+      .btn {
+        font-weight: 600;
+        background-color: #ffe0b2;
+        color: #4e342e;
+      }
+      .card-img-top {
+        aspect-ratio: 16 / 9;
+        border-radius: 8px;
+      }
+      .card:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transform: translate(0, -5px);
+        transition: all 0.3s;
+      }
+      .btn:hover {
+        background-color: #ffe0b2eb;
+        color: #4e342e;
+      }
+      #title {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../accueil.html">
+            <h6 class="logo">MAROKA</h6>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a aria-current="page" class="nav-link" href="../accueil.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinations.html">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="culture.html">Culture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="container py-5">
+        <div class="row g-4 g-lg-5 mt-1">
+          <br />
+          <h1 id="title" class="mb-4 text-center">
+            Explorez l'Héritage Culturel
+          </h1>
+          <br />
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/djellaba.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Djellaba</h5>
+                <p class="card-text">
+                  Une tenue traditionnelle marocaine portée par les hommes et
+                  les femmes, souvent ornée de broderies élégantes.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Djellaba"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/babouches.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Babouches</h5>
+                <p class="card-text">
+                  Des chaussures en cuir souple, souvent colorées, qui
+                  symbolisent le savoir-faire artisanal marocain.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Babouche"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/Tajine.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Tajine</h5>
+                <p class="card-text">
+                  Un plat mijoté emblématique de la cuisine marocaine, cuit dans
+                  un récipient en terre cuite.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Tajine"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/The a la Menthe.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Thé à la Menthe</h5>
+                <p class="card-text">
+                  Une boisson traditionnelle servie comme symbole d’hospitalité,
+                  sucrée et parfumée à la menthe fraîche.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Th%C3%A9_%C3%A0_la_menthe"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/Zellige.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Zellige</h5>
+                <p class="card-text">
+                  Des mosaïques colorées, fabriquées à la main, qui décorent les
+                  palais, mosquées et fontaines.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Zellige"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/Caftan.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Caftan</h5>
+                <p class="card-text">
+                  Une robe longue et élégante portée lors des mariages et des
+                  occasions spéciales.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Caftan"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/Tapis berberes.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Tapis berbères</h5>
+                <p class="card-text">
+                  Des tapis faits à la main, aux motifs et couleurs uniques,
+                  représentant la culture amazighe.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Tapis_berb%C3%A8re"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/Argan.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Argan</h5>
+                <p class="card-text">
+                  Une huile précieuse utilisée pour la cuisine et les soins de
+                  la peau, extraite des fruits de l’arganier.
+                </p>
+                <a
+                  href="https://fr.wiktionary.org/wiki/argan"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/Henna.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Henna</h5>
+                <p class="card-text">
+                  Une tradition de décoration corporelle utilisée pour les
+                  mariages et les fêtes religieuses.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Henn%C3%A9"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 10 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/Amlou.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Amlou</h5>
+                <p class="card-text">
+                  Une pâte à tartiner à base d'amandes, d'huile d'argan et de
+                  miel, souvent consommée au petit-déjeuner.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Amlou"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 11 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/Gnawa.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Gnawa</h5>
+                <p class="card-text">
+                  Une musique spirituelle, avec des chants et instruments
+                  traditionnels comme le guembri.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Gnawa"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 12 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="../assets/Couscous.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Couscous</h5>
+                <p class="card-text">
+                  Un plat incontournable du vendredi, composé de semoule, de
+                  légumes et souvent de viande.
+                </p>
+                <a
+                  href="https://fr.wikipedia.org/wiki/Couscous"
+                  target="_blank"
+                  class="btn"
+                >
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
