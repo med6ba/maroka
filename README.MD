@@ -1,6 +1,6 @@
 # Maroka Website
 
-The project involves creating a static MAROKA website designed to assist tourists unfamiliar with Morocco. It provides insights into the country's cities, rich culture, and diverse traditions, offering a comprehensive guide for travelers.
+The project involves creating a static <a href="https://maroka.netlify.app" target="_blanc">MAROKA</a> website designed to assist tourists unfamiliar with Morocco. It provides insights into the country's cities, rich culture, and diverse traditions, offering a comprehensive guide for travelers.
 
 ## Features
 
