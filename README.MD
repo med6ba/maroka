@@ -26,7 +26,8 @@ maroka
 ├── style/                   # Stylesheets
 │   ├── style.css            # Custom styles
 │   └── bootstrap.css        # Bootstrap styles
-├── js/                      # Bootstrap JS file
+├── js/                      # JS file
+│   └── bootstrap.js         # Bootstrap JS file
 ├── assets/                  # Images
 └── README.md                # Project documentation
 ```
