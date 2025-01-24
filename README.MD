@@ -49,4 +49,4 @@ maroka
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the <a href="https://github.com/med6ba/maroka/blob/main/LICENSE">LICENSE</a> file for details.
