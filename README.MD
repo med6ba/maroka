@@ -18,7 +18,7 @@ The project involves creating a static <a href="https://maroka.netlify.app">MARO
 
 ```
 maroka
-├── accueil.html             # Accueil page
+├── index.html               # Accueil page
 ├── subpages/                # Other html pages
 │   ├── destinations.html    # Destinations page
 │   ├── culture.html         # Culture page
@@ -45,7 +45,7 @@ maroka
    git clone https://github.com/med6ba/maroka.git
    ```
 
-2. Open `accueil.html` in your browser to view the website.
+2. Open `index.html` in your browser to view the website.
 
 ## License
 
